@@ -456,8 +456,7 @@ namespace __cxxabiv1
 
 	set_init_in_progress_flag(g, 0);
 	_GLIBCXX_GUARD_SET_AND_RELEASE(g);
-        printf("[HACK] skipping static cond broadcast\n");
-        // get_static_cond().broadcast();
+        get_static_cond().broadcast();
 	return;
       }	
 #endif
